@@ -1,28 +1,35 @@
-This project was generated from [create.xyz](https://create.xyz/).
+# Sketchify - AI-Powered Drawing Tool
 
-It is a [Next.js](https://nextjs.org/) project built on React and TailwindCSS.
+Sketchify is an interactive web application that combines drawing capabilities with AI-powered analysis. Users can create drawings and get instant AI feedback and analysis.
 
-## Getting Started
+## Features
 
-First, run the development server:
+### Drawing Tools
+- ✏️ Freehand drawing with adjustable brush sizes
+- 🔷 Shape tools (Rectangle, Circle, Triangle, Line)
+- ✍️ Text tool with customizable fonts and styles
+- 🔄 Undo/Redo functionality
+- 🧹 Eraser tool
+- 🎨 Color picker with preset colors
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### AI Integration
+- 🤖 Real-time AI analysis of drawings
+- 💭 Natural language prompts for analysis
+- 📝 Instant feedback and suggestions
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### User Interface
+- 🌓 Dark/Light mode support
+- 📱 Responsive design
+- 🎯 Intuitive toolbar
+- 🖼️ Canvas zoom and pan controls
 
-You can start editing the code in `src`. The page auto-updates as you edit the file.
+## Tech Stack
 
-To learn more, take a look at the following resources:
+- **Frontend Framework**: Next.js 14
+- **UI Library**: Material-UI (MUI)
+- **Drawing Library**: Konva.js
+- **AI Integration**: Google Gemini API
+- **Animation**: Framer Motion
+- **Styling**: Emotion (MUI's styling solution)
 
-- [React Documentation](https://react.dev/) - learn about React
-- [TailwindCSS Documentation](https://tailwindcss.com/) - learn about TailwindCSS
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure

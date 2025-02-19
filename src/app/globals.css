@@ -2,4 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Add any other global styles here */
+/* Remove all font-face and font-related styles */
