@@ -411,7 +411,7 @@ export default function Home() {
                     <Button
                       variant="contained"
                       size="large"
-                      onClick={() => router.push('/canvas')}
+                      onClick={() => router.push('/ai-canvas')}
                       sx={{
                         borderRadius: '12px',
                         px: 4,
