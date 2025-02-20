@@ -10,9 +10,14 @@ import {
 } from '@mui/material';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import Canvas from './Canvas';
+import dynamic from 'next/dynamic';
 import InputAndResult from './InputAndResult';
 import ResultSection from './ResultSection';
+
+// Dynamic import for Canvas component to avoid SSR issues
+const Canvas = dynamic(() => import('./Canvas'), {
+  ssr: false
+});
 
 const CanvasAssistance = () => {
   const theme = useTheme();

@@ -51,6 +51,15 @@ import { motion, AnimatePresence } from 'framer-motion';
 import TextToolbox from './TextToolbox';
 import { alpha } from '@mui/material/styles';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
+import dynamic from 'next/dynamic';
+
+// Import Konva components dynamically to avoid SSR issues
+const Stage = dynamic(() => import('react-konva').then((mod) => mod.Stage), {
+  ssr: false,
+});
+const Layer = dynamic(() => import('react-konva').then((mod) => mod.Layer), {
+  ssr: false,
+});
 
 const TOOLS = {
   SELECT: 'select',
@@ -67,6 +76,11 @@ const DRAW_THROTTLE = 16; // ~60fps
 const MIN_POINTS_FOR_CURVE = 3;
 const SMOOTHING_FACTOR = 0.2;
 const PRESSURE_SENSITIVITY = 0.5;
+
+// Move client-side components to separate files if they're large
+const TextToolPopup = dynamic(() => import('./TextToolPopup'), {
+  ssr: false // Disable server-side rendering for canvas components
+});
 
 const Canvas = ({ onDrawingChange }) => {
   const theme = useTheme();

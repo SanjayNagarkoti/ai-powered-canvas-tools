@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "vercel-build": "npm install --force canvas && npm run build"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -19,6 +20,7 @@
     "@mui/icons-material": "^6.4.4",
     "@mui/material": "^6.4.4",
     "@tldraw/tldraw": "^3.8.1",
+    "canvas": "^2.11.2",
     "framer-motion": "^12.4.4",
     "konva": "^8.4.3",
     "lodash": "^4.17.21",
